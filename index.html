@@ -3,15 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendador de Comida</title>
+    <title>BRZDRINK</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="./assets/logobarraza.png" alt="logo-de-la-marca">
+            <ul>
+                <li> INICIO </li>
+                <li> PRODUCTOS </li>
+                <li> CONTACTO </li>
+                <li> TERMINOS Y CONDICIONES </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>No sabes que comer hoy?</h1>
-        <h2>NO TE PREOCUPES, hace nuestro test de recomendador de comida</h2>
-        <button onclick="iniciarRecomendador()">Iniciar</button>
+        <h1> Bienvenidos a nuestra Tienda De Bebidas</h1>
+        <section class="descuentos">
+            <article class="descuentos-two">
+                <h2> LUNES A MIERCOLES 15% DE DESCUENTOS </h2>
+                <p> NO TE PIERDAS NUESTRAS OFERTAS Y DESCUENTOS EN PRODUCTOS SELECCIONADOS. </p>
+                <h3> CON PAGOS EN EFECTIVO O TARJETAS BANCARIZADAS</h3>
+            </article>
+        </section>
+        <section class="promosflex">
+            <article class="articlebranca">
+                <img src="./assets/Fernet_con_coca-removebg-preview.png" alt="">
+                <div class="texto-branca">
+                    <p class="texto-interno-branca"> FERNET BRANCA 750ml + 2 COCA COLAS 2l </p>
+                    <p class="precio-branca"> $12.000 </p>
+                    <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
+                </div>
+            </article>
+            <article class="articlebranca">
+                <img src="./assets/Fernet_con_coca-removebg-preview.png" alt="">
+                <div class="texto-branca">
+                    <p class="texto-interno-branca"> FERNET BRANCA 750ml + 2 COCA COLAS 2l </p>
+                    <p class="precio-branca"> $12.000 </p>
+                    <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
+                </div>
+            </article>
+            <article class="articlebranca">
+                <img src="./assets/Fernet_con_coca-removebg-preview.png" alt="">
+                <div class="texto-branca">
+                    <p class="texto-interno-branca"> FERNET BRANCA 750ml + 2 COCA COLAS 2l </p>
+                    <p class="precio-branca"> $12.000 </p>
+                    <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
+                </div>
+            </article>
+            <article class="articlebranca">
+                <img src="./assets/Fernet_con_coca-removebg-preview.png" alt="">
+                <div class="texto-branca">
+                    <p class="texto-interno-branca"> FERNET BRANCA 750ml + 2 COCA COLAS 2l </p>
+                    <p class="precio-branca"> $12.000 </p>
+                    <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
+                </div>
+            </article>
+        </section>
+        <section class="total">
+            <h2>Total: $<span id="totalprecio">0</span></h2>
+            <button class="mostrarCarrito" id="mostrarCarritoBtn">Mostrar Carrito</button>
+        </section>
     </main>
+    <footer>
+        <p>Contacto: tienda@bebidas.com | Teléfono: 123-456-7890</p>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
 </html>
