@@ -10,6 +10,10 @@ nav {
     align-items: center;
 }
 
+nav ion-icon {
+    height: 100px;
+}
+
 nav img {
     height: 9rem;
     width: 8rem;
@@ -26,10 +30,27 @@ nav ul {
 nav ul li {
     list-style: none;
     margin: 15px;
+    margin-right: 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #fd611a;
 }
 
 h1 {
+    justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+h1:hover {
+    color: #fd611a;
 }
 
 .descuentos {
@@ -66,6 +87,7 @@ h1 {
     align-items: center;
     border: 2px solid #f7f7f7;
     border-radius: 5px;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);;
 }
 
 .articlebranca img {
@@ -73,19 +95,34 @@ h1 {
     height: 15rem;
 }
 
-.texto-branca {
+.texto {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f7f7f7;
 }
 
-.texto-interno-branca {
+.texto button {
+    border-radius: 8px;
+    width: 8rem;
+    height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.555);
+}
+
+.texto button:hover {
+    box-shadow: rgba(0, 0, 0, 0.856);
+    background-color: orangered;
+    transition: 0.35s;
+    color: white;
+    cursor: pointer;
+}
+
+.texto-interno {
     font-size: 20px;
     width: 17rem;
 }
 
-.precio-branca {
+.precio {
     margin: 10px 0px;
     font-size: 35px;
 }
@@ -100,6 +137,13 @@ h1 {
 .mostrarCarrito {
     width: 7rem;
     height: 35px;
+}
+
+footer {
+    align-content: center;
+    margin-top: 5rem;
+    height: 10rem;
+    background-color: #fd611a;;
 }
 
 footer p {
