@@ -11,12 +11,12 @@ nav {
 }
 
 nav ion-icon {
-    height: 100px;
+    font-size: 35px; /* Ajusta este valor al tamaño que desees */
 }
 
 nav img {
-    height: 9rem;
-    width: 8rem;
+    height: 12rem;
+    width: 12rem;
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav ul {
 nav ul li {
     list-style: none;
     margin: 15px;
-    margin-right: 5rem;
+    margin-right: 1.3rem;
 }
 
 nav ul li a {
@@ -72,6 +72,66 @@ h1:hover {
 
 .descuentos-two {
     margin: 5px 0px 7rem 0px;
+}
+
+#panelCarrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#panelCarrito.visible {
+    transform: translateX(0);
+}
+
+#panelCarrito .close {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    float: right;
+}
+
+#panelCarrito .close:hover {
+    color: #fd611a;
+}
+
+#panelCarrito .accionesCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#panelCarrito .accionesCarrito p {
+    font-size: 20px;
+}
+
+#panelCarrito .accionesCarrito button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #fd611a;
+    color: white;
+    cursor: pointer;
+}
+
+#panelCarrito .accionesCarrito button:hover {
+    background-color: orangered;
+}
+
+#itemCount {
+    margin-left: 5px;
+    color: #fd611a;
+    display: none !important;
 }
 
 .promosflex {

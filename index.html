@@ -11,76 +11,76 @@
         <nav>
             <img src="./assets/logobarraza.png" alt="logo-de-la-marca">
             <ul>
-                <li> 
-                    <a href="#">INICIO</a> 
-                </li>
-                <li> <a href="#">PRODUCTOS</a>
-                </li>
-                <li> 
-                    <a href="#">CONTACTO</a>
-                </li>
-                <li> 
-                    <a href="#">TERMINOS Y CONDICIONES</a>
-                </li>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="#">TERMINOS Y CONDICIONES</a></li>
             </ul>
-            <ion-icon src="./assets/invert-mode-outline.svg" name="invert-mode-outline"></ion-icon>
+            <ion-icon name="cart-outline" id="carritoIcon"></ion-icon>
+            <span id="itemCount">0</span>
         </nav>
     </header>
     <main>
-        <h1> Bienvenidos a nuestra Tienda De Bebidas</h1>
+        <h1>Bienvenidos a nuestra Tienda De Bebidas</h1>
         <section class="descuentos">
             <article class="descuentos-two">
-                <h2> LUNES A MIERCOLES 15% DE DESCUENTOS </h2>
-                <p> NO TE PIERDAS NUESTRAS OFERTAS Y DESCUENTOS EN PRODUCTOS SELECCIONADOS. </p>
-                <h3> CON PAGOS EN EFECTIVO O TARJETAS BANCARIZADAS</h3>
+                <h2>LUNES A MIERCOLES 15% DE DESCUENTOS</h2>
+                <p>NO TE PIERDAS NUESTRAS OFERTAS Y DESCUENTOS EN PRODUCTOS SELECCIONADOS.</p>
+                <h3>CON PAGOS EN EFECTIVO O TARJETAS BANCARIZADAS</h3>
             </article>
         </section>
-        <section class="promosflex">
-            <article class="articlebranca">
-                <img src="./assets/vino-toraso.jpg" alt="">
-                <div class="texto">
-                    <p class="texto-interno"> 2u VINO TETRA TORO + PRITTY 3l </p>
-                    <p class="precio"> $5.000 </p>
-                    <button onclick="agregarAlCarritoPa('2u Vino Tinto Toro + Pritty 3l', 5000)"> AGREGAR AL CARRITO </button>
-            
-            </article>
-            <article class="articlebranca">
-                <img src="./assets/Fernet_con_coca-removebg-preview.png" alt="">
-                <div class="texto">
-                    <p class="texto-interno"> FERNET BRANCA 750ml + 2u COCA COLAS 2l </p>
-                    <p class="precio"> $12.000 </p>
-                    <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
-                </div>
-            </article>
-            <article class="articlebranca">
-                <img src="./assets/Skyy.jpg" alt="">
-                <div class="texto">
-                    <p class="texto-interno"> VODKA SKYY + 2u SPEEDS XL 473ML </p>
-                    <p class="precio"> $11.000 </p>
-                    <button onclick="agregarAlCarritoPa('Vodka Skyy 750ml + Energizantes Speeds XL 473ml', 11000)"> AGREGAR AL CARRITO </button>
-                </div>
-            </article>
-            <article class="articlebranca">
-                <img src="./assets/Smirlo.jpg" alt="">
-                <div class="texto">
-                    <p class="texto-interno"> VODKA SMIRNOFF + 2u SPEEDS XL 473ML </p>
-                    <p class="precio"> $10.000 </p>
-                    <button onclick="agregarAlCarritoPa('Vodka Smirnoff 700ml + Energizantes Speeds XL 473ml', 10000)"> AGREGAR AL CARRITO </button>
-                </div>
-            </article>
+            <section class="promosflex">
+                <article class="articlebranca">
+                    <img src="./assets/vino-toraso.jpg" alt="">
+                    <div class="texto">
+                        <p class="texto-interno"> 2u VINO TETRA TORO + PRITTY 3l </p>
+                        <p class="precio"> $5.000 </p>
+                        <button onclick="agregarAlCarritoPa('2u Vino Tinto Toro + Pritty 3l', 5000)"> AGREGAR AL CARRITO </button>
+                
+                </article>
+                <article class="articlebranca">
+                    <img src="./assets/fernetconcoca.png" alt="">
+                    <div class="texto">
+                        <p class="texto-interno"> FERNET BRANCA 750ml + 2u COCA COLAS 2l </p>
+                        <p class="precio"> $12.000 </p>
+                        <button onclick="agregarAlCarritoPa('Fernet Branca 750ml + 2 Coca Colas 2l', 12000)"> AGREGAR AL CARRITO </button>
+                    </div>
+                </article>
+                <article class="articlebranca">
+                    <img src="./assets/skyy.jpg" alt="">
+                    <div class="texto">
+                        <p class="texto-interno"> VODKA SKYY + 2u SPEEDS XL 473ML </p>
+                        <p class="precio"> $11.000 </p>
+                        <button onclick="agregarAlCarritoPa('Vodka Skyy 750ml + Energizantes Speeds XL 473ml', 11000)"> AGREGAR AL CARRITO </button>
+                    </div>
+                </article>
+                <article class="articlebranca">
+                    <img src="./assets/smirlo.jpg" alt="">
+                    <div class="texto">
+                        <p class="texto-interno"> VODKA SMIRNOFF + 2u SPEEDS XL 473ML </p>
+                        <p class="precio"> $10.000 </p>
+                        <button onclick="agregarAlCarritoPa('Vodka Smirnoff 700ml + Energizantes Speeds XL 473ml', 10000)"> AGREGAR AL CARRITO </button>
+                    </div>
+                </article>
+            </section>
         </section>
-        <section class="total">
-            <h2>Total: $<span id="totalprecio">0</span></h2>
-            <div id="mensajeContainer"></div>
-            <section id="carritoContainer"></section>
-            <button class="mostrarCarrito" id="mostrarCarritoPa">Mostrar Carrito</button>
-        </section>
+        <div id="panelCarrito" class="panel">
+            <span id="closePanel" class="close">&times;</span>
+            <div id="carritoContainer"></div>
+            <div class="accionesCarrito">
+                <p>Total: $<span id="totalCarrito">0</span></p>
+                <button id="finalizarCompra">Finalizar compra</button>
+                <button id="eliminarCarrito">Eliminar carrito</button>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Contacto: tienda@bebidas.com | Teléfono: 123-456-7890</p>
+        <p>Contacto: drinkstoredarwin@gmail.com | Teléfono: 123-456-7890</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
+
